@@ -1,0 +1,161 @@
+.App {
+  text-align: center;
+  height: 100%;
+  .tabSwitch {
+    display: flex;
+    flex-direction: row;
+    height: 10rem;
+    border: 1px solid black;
+    cursor: pointer;
+    font-size: 1.5rem;
+    font-weight: bold;
+    .counter{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 50%;
+      
+    }
+    .Table{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-left: 1px solid black;
+      width: 50%
+    }
+    .active {
+      background-color: green;
+      color: white;
+    }
+  }
+
+  .counterDiv {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    .counterNumber {
+      height: 20rem;
+      width: 20rem;
+      border-radius: 50%;
+      border: 1px solid black;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: red;
+      color: white;
+      font-size: 3rem;
+      font-weight: 600;
+      margin-bottom: 2rem;
+    }
+    .buttonRow {
+      display: flex;
+      flex-direction: row;
+      margin-top: 1rem;
+      .resetBtn {
+        margin-right: 1rem;
+      }
+    }
+  }
+
+  .tableDiv{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+    padding-top: 10rem;
+    table {
+      font-family: arial, sans-serif;
+      border-collapse: collapse;
+      width: 80%;
+    }
+
+    th {
+      color: gray;
+      text-align: center;
+    }
+    
+    td, th {
+      border: 1px solid #dddddd;
+      text-align: left;
+      padding: 8px;
+    }
+    
+    tr:nth-child(even) {
+      background-color: #dddddd;
+    }
+
+    .icon{
+      height: 0.9rem;
+      width: 1.3rem;
+      margin-right: 0.5rem;
+    }
+    .emailicon {
+      height: 1rem;
+      width: 1rem;
+      margin-right: 0.5rem;
+    }
+    .positionicon {
+      height: 1rem;
+      width: 1rem;
+      margin-right: 0.5rem;
+    }
+
+    .new{
+      margin-bottom: 1rem;
+      opacity: 0.7;
+      padding: 0.5rem 0;
+      width: 80%;
+      color: gray;
+      border-bottom: 1px solid gray;
+      text-align:left;
+      cursor: pointer;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      .newWord {
+        margin-left: 0.5rem;
+      }
+    }
+    .new:hover {
+      opacity: 0.7;
+      background-color: #dddddd;
+    }
+  }
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
